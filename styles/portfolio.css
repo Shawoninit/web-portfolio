@@ -3,29 +3,52 @@ body {
     font-family: 'Open Sans', sans-serif;}
 
 /*Nav related styles */
-nav{
+/* CSS for Nav Header */
+nav {
     display: flex;
-    margin:0 200px;
-
-}
-.nav-title {
-    color: black;
-font-size: 45px;
-font-weight: 800;
-
-}
-.text-primary{
-    color: #fd6e0a;
-}
-nav > ul{
-    display: flex;}
-    
-    nav li{
-list-style: none;
-margin-right: 50px;}
-nav a{
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .nav-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .text-primary {
+    color: #ff5a5f;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-left: 10px;
+  }
+  
+  a {
     text-decoration: none;
-    color:black ;
+    color: #333;
+  }
+  
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff5a5f;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  
 }
 .btn-primary{
     border-radius:5px ;
@@ -249,8 +272,25 @@ background-position: bottom right;
   /*footer style*/
   footer {
     display:flex ;
+    gap: 100px;
     background: #FFF8F3;
     margin-top: 100px;
     padding: 130px 200px;
   }
-  
+  .footer-column{
+    width: 50%;
+  }
+  .social-links a{
+    margin-right: 25px;
+  }
+  .contact input[type="text"], .contact input [type="email"] 
+  textarea {
+    display: block;
+    margin-bottom: 25px;
+    padding: 18px 35px;
+    color: #757575;
+    border-radius: 5px;
+    background: #fff8f3;
+    border: 0;
+width: 100%;
+}
